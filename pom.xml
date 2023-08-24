@@ -1178,7 +1178,7 @@
         </repository>
         <repository>
             <id>xenit-private</id>
-            <url>https://repo.xenit.eu/K8TBkpYRAtTc9flA/private/maven/</url>
+            <url>https://repo.xenit.eu/basic/private/maven/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
