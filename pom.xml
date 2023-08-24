@@ -9,7 +9,7 @@
     <artifactId>swagger-codegen-project</artifactId>
     <packaging>pom</packaging>
     <name>swagger-codegen-project</name>
-    <version>3.0.34</version>
+    <version>3.0.34.1-SNAPSHOT</version>
     <url>https://github.com/swagger-api/swagger-codegen</url>
     <scm>
         <connection>scm:git:git@github.com:swagger-api/swagger-codegen.git</connection>
@@ -1176,9 +1176,21 @@
                 <enabled>true</enabled>
             </releases>
         </repository>
+        <repository>
+            <id>xenit-private</id>
+            <url>https://repo.xenit.eu/K8TBkpYRAtTc9flA/private/maven/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
     </repositories>
     <properties>
-        <swagger-codegen-generators-version>1.0.34</swagger-codegen-generators-version>
+        <swagger-codegen-generators-version>1.0.34.1-SNAPSHOT</swagger-codegen-generators-version>
         <swagger-core-version>2.1.13</swagger-core-version>
         <swagger-core-version-v1>1.6.6</swagger-core-version-v1>
         <swagger-parser-version>2.0.30</swagger-parser-version>
@@ -1208,4 +1220,14 @@
         <snakeyaml-version>1.30</snakeyaml-version>
         <handlebars-version>4.3.0</handlebars-version>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>xenit-private</id>
+            <url>https://maven.cloudsmith.io/xenit/private/</url>
+        </repository>
+        <snapshotRepository>
+            <id>xenit-private</id>
+            <url>https://maven.cloudsmith.io/xenit/private/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
